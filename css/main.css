@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Bold.woff2') format('woff2'),
+      url('OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+      url('../fonts/OpenSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fontsOpenSans-MediumItalic.woff2') format('woff2'),
+      url('../fonts/OpenSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-style: normal;
+  color: #000;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  padding-top: 20px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin-right: 32px;
+}
+.header-nav-item {
+  margin-left: 32px;
+}
+.header-nav-link:hover {
+  border-bottom: 3px solid #00BAFC;
+}
+.header-nav-link {
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.logo-img {
+  display: block;
+}
+
+.site-button {
+  font-family: Open Sans;
+  font-style: normal;
+  width: 159px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-button:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border: 3px solid #00BAFC;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.site-button:active {
+  border: none;
+  background: rgba(0, 186, 252, 0.6);
+  flex-direction: row;
+  color: #FFFFFF;
+}
+
+.header-button {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.intro-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.intro-site {
+  width: 470px;
+  height: 224px;
+  margin-top: 97px;
+  margin-bottom: 97px;
+  padding: 0;
+}
+
+.intro-title {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.intro-title-lorem {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.intro-img {
+  margin-top: 80px;
+  margin-left: 172px;
+  margin-bottom: 80px;
+}
+
+.our-service {
+  text-align: center;
+}
+
+.our-page-lorem {
+  font-family: Open Sans;
+  width: 719px;
+  height: 48px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.our-service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.our-service-list {
+  margin-top: 24px;
+}
+
+.our-service-item:nth-child(3n),
+.our-service-item:last-child {
+  margin-right: 0;
+}
+
+
+.our-service-item {
+  width: 320px;
+  height: 260px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+
+  padding: 35px 26px 27px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+.our-service-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.our-link-service {
+  margin-left: 16px;
+  margin-top: 7px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #00BAFC;
+}
+
+
+.working-container {
+  width: 820px;
+  text-align: center;
+}
+
+.working-section {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.working-section-title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.working-section-item {
+  width: 719px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  align-items: center;
+  align-items: center;
+  color: #000000;
+}
+
+.working-description {
+  width: 500px;
+  height: 82px;
+  margin-left: 35px;
+}
+
+.working-question {
+  display: flex;
+  text-align: left;
+  margin-bottom: 48px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.working-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.working-title-item {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.working-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form {
+  text-align: center;
+  background: #00BAFC;
+  padding-bottom: 64px;
+}
+
+.form-content {
+  padding-top: 24px;
+}
+
+.form-title {
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form-description {
+  width: 719px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+line-height: 150%;
+  display: inline-block;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form-section {
+  width: 348px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 300px;
+  padding: 16px 22px 16px 16px;
+  background: #F3F3F3;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+
+.input::placeholder {
+  color: #000000;
+}
+
+.fotter{
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 56px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.fotter-link-item{
+  width: 320px;
+}
+.fotter-content-item{
+  display: flex;
+}
+.fotter-content-link{
+  list-style: none;
+}
+.fotter-link-lorem{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.site-fotter{
+  margin-left: 87px;
+}
